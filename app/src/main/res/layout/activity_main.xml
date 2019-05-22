@@ -51,5 +51,16 @@
            app:layout_constraintHorizontal_bias="0.008"
            app:layout_constraintTop_toBottomOf="@+id/single_fragment_recycler_view"
            android:layout_marginTop="24dp"/>
+   <Button
+           android:text="@string/activity2_start"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/start_activity_2"
+           style="@style/Widget.AppCompat.Button.Borderless"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintTop_toBottomOf="@+id/service"
+           app:layout_constraintVertical_bias="1.0"/>
 
 </android.support.constraint.ConstraintLayout>

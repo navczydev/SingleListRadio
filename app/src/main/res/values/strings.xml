@@ -3,5 +3,11 @@
     <string name="radiobutton">RadioButton</string>
     <string name="tv1">Member Name</string>
     <string name="lbl_member">Member</string>
+    <string name="activity2_start">Check Dynamic RadioGroup</string>
+    <string name="member_name">Nav Singh</string>
+    <string name="member2_name">Gaganjot Kaur</string>
     <string name="lbl_service">Service</string>
+    <string name="lbl_dental">Dental</string>
+    <string name="lbl_paramedical">Paramedical</string>
+    <string name="lbl_vision">Vision</string>
 </resources>
