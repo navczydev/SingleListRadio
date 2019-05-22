@@ -10,10 +10,7 @@ import android.widget.RadioButton
 import kotlinx.android.synthetic.main.dyanmic_radio_group.*
 import android.widget.LinearLayout
 import android.R.attr.checked
-
-
-
-
+import android.content.Intent
 
 
 class DynamicRadioGroup: AppCompatActivity() {
@@ -50,12 +47,18 @@ class DynamicRadioGroup: AppCompatActivity() {
 
         rg_member_list.setOnCheckedChangeListener { group, checkedId ->
             if(checkedId > -1){
-                for (i in 0 until rg_service.childCount) {
+                /*for (i in 0 until rg_service.childCount) {
                     (rg_service.getChildAt(i) as RadioButton).isEnabled = true
-                }
+                }*/
+                btn_dental.isEnabled = true
+                btn_paramedical.isEnabled = true
+                btn_vision.isEnabled = true
+
             }
+        }
 
-
+        btn_dental.setOnClickListener {
+            startActivity(Intent(this,SearchViewSample::class.java))
         }
 //        member1.height = px
 //        member1.typeface = Typeface.create(Typeface.SANS_SERIF,Typeface.NORMAL)

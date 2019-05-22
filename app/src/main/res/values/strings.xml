@@ -10,4 +10,6 @@
     <string name="lbl_dental">Dental</string>
     <string name="lbl_paramedical">Paramedical</string>
     <string name="lbl_vision">Vision</string>
+    <string name="txt_search">Search</string>
+    <string name="membername">MemberName</string>
 </resources>

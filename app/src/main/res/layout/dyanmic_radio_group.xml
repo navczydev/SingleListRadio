@@ -113,6 +113,7 @@
             android:layout_marginTop="16dp"
             android:orientation="vertical"
             android:id="@+id/rg_service"
+            android:visibility="gone"
     >
         <RadioButton
                 android:layout_width="match_parent"
@@ -134,5 +135,40 @@
         android:enabled="false"/>
 
     </RadioGroup>
+    <Button
+            android:text="@string/lbl_dental"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:id="@+id/btn_dental"
+            app:layout_constraintTop_toBottomOf="@+id/tv_service"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:enabled="false"
+    style="@style/Widget.AppCompat.Button.Borderless"/>
+    <Button
+            android:text="@string/lbl_paramedical"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:id="@+id/btn_paramedical"
+            app:layout_constraintTop_toBottomOf="@+id/btn_dental"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:enabled="false"
+    style="@style/Widget.AppCompat.Button.Borderless"/>
+    <Button
+            android:text="@string/lbl_vision"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:id="@+id/btn_vision"
+            app:layout_constraintTop_toBottomOf="@+id/btn_paramedical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:enabled="false"
+            style="@style/Widget.AppCompat.Button.Borderless" android:layout_marginTop="16dp"/>
 </android.support.constraint.ConstraintLayout>
 </android.support.v4.widget.NestedScrollView>
