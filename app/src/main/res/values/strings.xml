@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SingleListRadio</string>
+    <string name="radiobutton">RadioButton</string>
+    <string name="tv1">Member Name</string>
+    <string name="lbl_member">Member</string>
+    <string name="lbl_service">Service</string>
+</resources>

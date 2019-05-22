@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:padding="16dp">
+
+   <TextView
+           android:text="@string/lbl_member"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/member"
+           android:fontFamily="sans-serif"
+           android:textStyle="bold"
+           android:textColor="@android:color/black"
+           android:textSize="14sp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.0"
+           app:layout_constraintTop_toTopOf="parent"
+   />
+
+   <android.support.v7.widget.RecyclerView
+           android:id="@+id/single_fragment_recycler_view"
+           android:layout_width="match_parent"
+           android:layout_height="240dp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           tools:listitem="@tools:sample/full_names"
+           android:scrollbars="vertical"
+           android:scrollbarStyle="insideInset"
+           android:fadeScrollbars="false"
+           app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+           app:layout_constraintTop_toBottomOf="@+id/member"
+           android:layout_marginTop="8dp"/>
+
+   <TextView
+           android:text="@string/lbl_service"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/service"
+           android:fontFamily="sans-serif"
+           android:textStyle="bold"
+           android:textColor="@android:color/black"
+           android:textSize="14sp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.008"
+           app:layout_constraintTop_toBottomOf="@+id/single_fragment_recycler_view"
+           android:layout_marginTop="24dp"/>
+
+</android.support.constraint.ConstraintLayout>
